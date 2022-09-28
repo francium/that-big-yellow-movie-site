@@ -1,0 +1,296 @@
+.Main {
+  background: #ffffff;
+  padding-bottom: 2rem;
+}
+
+.Nav {
+  height: 6.5rem;
+  background: gold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: 0 1rem 0.25rem;
+  border-bottom: 4px solid #000000;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+@media (max-width: 600px) {
+  .Nav {
+    height: 4rem;
+  }
+}
+.Nav .logo {
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.truncate, .Table .row .details-col .row-first-row .title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.Table {
+  display: flex;
+  flex-direction: column;
+}
+.Table .row {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  padding: 5px 0;
+}
+.Table .row:nth-of-type(even) {
+  background: #ffffff;
+}
+.Table .row:nth-of-type(odd) {
+  background: #f9f9f9;
+}
+.Table .row .rank-col {
+  flex: 0 0 60px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  user-select: none;
+}
+.Table .row .rank-col .rank {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.Table .row .rank-col .icon-no-number {
+  display: flex;
+  justify-content: center;
+}
+.Table .row .rank-col .icon-with-number {
+  display: flex;
+  flex-direction: row;
+  padding: 0 6px;
+}
+.Table .row .rank-col .icon-with-number .icon {
+  flex: 1;
+}
+.Table .row .rank-col .icon-with-number .icon.arrow-up {
+  color: #2e992e;
+  fill: #2e992e;
+}
+.Table .row .rank-col .icon-with-number .icon.arrow-down {
+  color: red;
+  fill: red;
+}
+.Table .row .rank-col .icon-with-number .number {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.Table .row .poster-col {
+  flex: 0 0 60px;
+  display: flex;
+  justify-content: center;
+}
+.Table .row .poster-col .poster-link {
+  padding: 0;
+  height: 100%;
+}
+.Table .row .poster-col img {
+  height: 100%;
+}
+.Table .row .details-col {
+  flex: 5;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem 0.5rem;
+}
+.Table .row .details-col .row-first-row {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  flex: 1;
+}
+.Table .row .details-col .row-first-row .title {
+  font-size: inherit;
+  padding: 0;
+}
+.Table .row .details-col .row-stats {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+.Table .row .details-col .row-numbers {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-size: 18px;
+}
+.Table .row .details-col .rating {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  user-select: none;
+}
+.Table .row .details-col .rating .icon {
+  color: #2e992e;
+  position: relative;
+  top: -2px;
+  margin-right: 4px;
+  color: gold;
+  fill: gold;
+}
+.Table .row .details-col .row-graph {
+  flex: auto;
+}
+
+.Header {
+  display: flex;
+  align-items: baseline;
+  align-items: center;
+  padding: 2rem 0 2rem;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+.Header .title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.Header .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 20px;
+  width: 100%;
+}
+.Header .links .link-active {
+  font-weight: 600;
+}
+
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background: #f4f4f4;
+  color: #242424;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 1000px;
+  height: fit-content;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+  color: #282887;
+}
+a:visited {
+  color: inherit;
+  color: #282887;
+}
+
+/*# sourceMappingURL=index.css.map */
