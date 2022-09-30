@@ -176,6 +176,15 @@
   font-weight: 600;
 }
 
+.Footer {
+  display: flex;
+  justify-content: center;
+  color: #bbbbbb;
+  padding: 1rem;
+  user-select: none;
+  font-size: 13px;
+}
+
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -274,7 +283,8 @@ html, body {
 
 body {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #root {
